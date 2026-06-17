@@ -3,348 +3,437 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Instrumento</title>
+  <title>Instrumento | Catálogo</title>
+
   <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="CSS/Asset/CSS/estilos.css">
-  
 </head>
 
 <body>
 
-  <!-- Encabezado -->
-  <nav class="navbar">
-    <div class="container justify-content-center">
-      <a class="navbar-brand fw-bold" href="#">INSTRUMENTO</a>
+  <nav class="navbar navbar-expand-lg navbar-dark py-3">
+    <div class="container">
+      <a class="navbar-brand fs-2 fw-bold" href="index.html">INSTRUMENTO</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-dorado" href="index.html">Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link text-dorado" href="acerca.html">Acerca</a></li>
+          <li class="nav-item"><a class="nav-link text-dorado" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
-  <!-- Portada -->
-  <header class="hero">
+  <header class="hero d-flex align-items-center text-center">
     <div class="container">
-      <h1>Catálogo Musical</h1>
-      <p>Instrumentos elegantes para músicos con estilo, pasión y tradición.</p>
-      <a href="#cuerdas" class="btn btn-gold mt-3">Explorar catálogo</a>
+      <h1 class="display-4 titulo-principal">Catálogo Musical</h1>
+      <p class="lead mx-auto mt-3" style="max-width: 700px;">
+        Instrumentos elegantes para músicos con estilo, pasión y tradición.
+      </p>
+      <a href="#cuerdas" class="btn btn-dorado px-4 py-2 mt-3">Explorar catálogo</a>
     </div>
   </header>
 
-  <!-- Cuerdas -->
-  <section class="section-block" id="cuerdas">
-    <div class="container">
-      <h2 class="section-title">Instrumentos de Cuerda</h2>
+  <main>
+
+    <!-- CUERDAS -->
+    <section class="container py-5" id="cuerdas">
+      <h2 class="text-center titulo-seccion mb-4">Instrumentos de Cuerda</h2>
 
       <div class="row g-4">
 
         <div class="col-sm-6 col-lg-4">
-          <div class="product-card">
+          <div class="card product-card text-light">
             <div class="product-img">
               <img src="CSS/Asset/Cuerdas/arpa.png" alt="Arpa">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Arpa</h5>
-              <p class="card-text">Arpa clásica de concierto</p>
-              <p class="price">$18,500 MXN</p>
-              <button class="btn btn-gold btn-sm">Comprar</button>
+            <div class="card-body text-center">
+              <h5 class="card-title fs-3 fw-bold">Arpa</h5>
+              <p class="card-text">Instrumento de cuerda elegante y melódico.</p>
+              <button class="btn btn-dorado" data-bs-toggle="collapse" data-bs-target="#infoArpa">Saber más</button>
+              <div class="collapse mt-3" id="infoArpa">
+                <div class="card card-body bg-dark bg-opacity-50 border-warning text-light">
+                  El arpa produce un sonido delicado y envolvente. Se utiliza en música clásica, orquestal y tradicional.
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-sm-6 col-lg-4">
-          <div class="product-card">
+          <div class="card product-card text-light">
             <div class="product-img">
               <img src="CSS/Asset/Cuerdas/contrabajo.png" alt="Contrabajo">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Contrabajo</h5>
-              <p class="card-text">Contrabajo acústico profesional</p>
-              <p class="price">$24,900 MXN</p>
-              <button class="btn btn-gold btn-sm">Comprar</button>
+            <div class="card-body text-center">
+              <h5 class="card-title fs-3 fw-bold">Contrabajo</h5>
+              <p class="card-text">Instrumento grave de gran presencia sonora.</p>
+              <button class="btn btn-dorado" data-bs-toggle="collapse" data-bs-target="#infoContrabajo">Saber más</button>
+              <div class="collapse mt-3" id="infoContrabajo">
+                <div class="card card-body bg-dark bg-opacity-50 border-warning text-light">
+                  Es el instrumento más grave de la familia de cuerda frotada. Se usa en orquestas, jazz y música popular.
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-sm-6 col-lg-4">
-          <div class="product-card">
+          <div class="card product-card text-light">
             <div class="product-img">
               <img src="CSS/Asset/Cuerdas/Guitarra electrica.png" alt="Guitarra eléctrica">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Guitarra Eléctrica</h5>
-              <p class="card-text">Modelo moderno para escenario</p>
-              <p class="price">$9,800 MXN</p>
-              <button class="btn btn-gold btn-sm">Comprar</button>
+            <div class="card-body text-center">
+              <h5 class="card-title fs-3 fw-bold">Guitarra Eléctrica</h5>
+              <p class="card-text">Instrumento moderno con sonido amplificado.</p>
+              <button class="btn btn-dorado" data-bs-toggle="collapse" data-bs-target="#infoGuitarraElectrica">Saber más</button>
+              <div class="collapse mt-3" id="infoGuitarraElectrica">
+                <div class="card card-body bg-dark bg-opacity-50 border-warning text-light">
+                  Usa pastillas para convertir la vibración de las cuerdas en sonido eléctrico. Es clave en rock, blues, jazz y pop.
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-sm-6 col-lg-4">
-          <div class="product-card">
+          <div class="card product-card text-light">
             <div class="product-img">
-              <img src="CSS/Asset/Cuerdas/Guitarra acustica.png" alt="Guitarra">
+              <img src="CSS/Asset/Cuerdas/Guitarra acustica.png" alt="Guitarra acústica">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Guitarra Acústica</h5>
-              <p class="card-text">Sonido cálido y natural</p>
-              <p class="price">$6,300 MXN</p>
-              <button class="btn btn-gold btn-sm">Comprar</button>
+            <div class="card-body text-center">
+              <h5 class="card-title fs-3 fw-bold">Guitarra Acústica</h5>
+              <p class="card-text">Sonido natural, cálido y versátil.</p>
+              <button class="btn btn-dorado" data-bs-toggle="collapse" data-bs-target="#infoGuitarra">Saber más</button>
+              <div class="collapse mt-3" id="infoGuitarra">
+                <div class="card card-body bg-dark bg-opacity-50 border-warning text-light">
+                  Produce sonido mediante su caja de resonancia. Es muy usada para acompañamiento, música popular y folk.
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-sm-6 col-lg-4">
-          <div class="product-card">
+          <div class="card product-card text-light">
             <div class="product-img">
               <img src="CSS/Asset/Cuerdas/Laúd.png" alt="Laúd">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Laúd</h5>
-              <p class="card-text">Instrumento de estilo clásico</p>
-              <p class="price">$7,200 MXN</p>
-              <button class="btn btn-gold btn-sm">Comprar</button>
+            <div class="card-body text-center">
+              <h5 class="card-title fs-3 fw-bold">Laúd</h5>
+              <p class="card-text">Instrumento antiguo de sonido refinado.</p>
+              <button class="btn btn-dorado" data-bs-toggle="collapse" data-bs-target="#infoLaud">Saber más</button>
+              <div class="collapse mt-3" id="infoLaud">
+                <div class="card card-body bg-dark bg-opacity-50 border-warning text-light">
+                  El laúd fue muy popular en la música renacentista y barroca. Destaca por su caja curva y sonido suave.
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-sm-6 col-lg-4">
-          <div class="product-card">
+          <div class="card product-card text-light">
             <div class="product-img">
               <img src="CSS/Asset/Cuerdas/mandolina.png" alt="Mandolina">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Mandolina</h5>
-              <p class="card-text">Acabado brillante tradicional</p>
-              <p class="price">$5,700 MXN</p>
-              <button class="btn btn-gold btn-sm">Comprar</button>
+            <div class="card-body text-center">
+              <h5 class="card-title fs-3 fw-bold">Mandolina</h5>
+              <p class="card-text">Instrumento pequeño de sonido brillante.</p>
+              <button class="btn btn-dorado" data-bs-toggle="collapse" data-bs-target="#infoMandolina">Saber más</button>
+              <div class="collapse mt-3" id="infoMandolina">
+                <div class="card card-body bg-dark bg-opacity-50 border-warning text-light">
+                  La mandolina tiene cuerdas dobles y se toca con púa. Es común en música tradicional, clásica y popular.
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-sm-6 col-lg-4">
-          <div class="product-card">
+          <div class="card product-card text-light">
             <div class="product-img">
               <img src="CSS/Asset/Cuerdas/ukelele.png" alt="Ukelele">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Ukelele</h5>
-              <p class="card-text">Compacto, ligero y brillante</p>
-              <p class="price">$2,100 MXN</p>
-              <button class="btn btn-gold btn-sm">Comprar</button>
+            <div class="card-body text-center">
+              <h5 class="card-title fs-3 fw-bold">Ukelele</h5>
+              <p class="card-text">Instrumento ligero de sonido alegre.</p>
+              <button class="btn btn-dorado" data-bs-toggle="collapse" data-bs-target="#infoUkelele">Saber más</button>
+              <div class="collapse mt-3" id="infoUkelele">
+                <div class="card card-body bg-dark bg-opacity-50 border-warning text-light">
+                  El ukelele tiene cuatro cuerdas y es conocido por su sonido brillante. Es popular en música hawaiana y pop.
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-sm-6 col-lg-4">
-          <div class="product-card">
+          <div class="card product-card text-light">
             <div class="product-img">
               <img src="CSS/Asset/Cuerdas/viola.png" alt="Viola">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Viola</h5>
-              <p class="card-text">Sonido profundo para orquesta</p>
-              <p class="price">$8,900 MXN</p>
-              <button class="btn btn-gold btn-sm">Comprar</button>
+            <div class="card-body text-center">
+              <h5 class="card-title fs-3 fw-bold">Viola</h5>
+              <p class="card-text">Sonido profundo dentro de la cuerda frotada.</p>
+              <button class="btn btn-dorado" data-bs-toggle="collapse" data-bs-target="#infoViola">Saber más</button>
+              <div class="collapse mt-3" id="infoViola">
+                <div class="card card-body bg-dark bg-opacity-50 border-warning text-light">
+                  La viola es similar al violín, pero un poco más grande. Tiene un tono más grave, cálido y expresivo.
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-sm-6 col-lg-4">
-          <div class="product-card">
+          <div class="card product-card text-light">
             <div class="product-img">
               <img src="CSS/Asset/Cuerdas/violin.png" alt="Violín">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Violín</h5>
-              <p class="card-text">Violín clásico para estudio</p>
-              <p class="price">$6,800 MXN</p>
-              <button class="btn btn-gold btn-sm">Comprar</button>
+            <div class="card-body text-center">
+              <h5 class="card-title fs-3 fw-bold">Violín</h5>
+              <p class="card-text">Instrumento clásico de gran expresividad.</p>
+              <button class="btn btn-dorado" data-bs-toggle="collapse" data-bs-target="#infoViolin">Saber más</button>
+              <div class="collapse mt-3" id="infoViolin">
+                <div class="card card-body bg-dark bg-opacity-50 border-warning text-light">
+                  El violín es uno de los instrumentos principales de la orquesta. Destaca por su sonido agudo y expresivo.
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Percusión -->
-  <section class="section-block">
-    <div class="container">
-      <h2 class="section-title">Instrumentos de Percusión</h2>
+    <!-- PERCUSIÓN -->
+    <section class="container py-5">
+      <h2 class="text-center titulo-seccion mb-4">Instrumentos de Percusión</h2>
 
       <div class="row g-4 justify-content-center">
 
         <div class="col-sm-6 col-lg-4">
-          <div class="product-card">
+          <div class="card product-card text-light">
             <div class="product-img">
               <img src="CSS/Asset/percusion/bateria.png" alt="Batería">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Batería</h5>
-              <p class="card-text">Set completo profesional</p>
-              <p class="price">$16,900 MXN</p>
-              <button class="btn btn-gold btn-sm">Comprar</button>
+            <div class="card-body text-center">
+              <h5 class="card-title fs-3 fw-bold">Batería</h5>
+              <p class="card-text">Conjunto rítmico usado en muchos géneros.</p>
+              <button class="btn btn-dorado" data-bs-toggle="collapse" data-bs-target="#infoBateria">Saber más</button>
+              <div class="collapse mt-3" id="infoBateria">
+                <div class="card card-body bg-dark bg-opacity-50 border-warning text-light">
+                  La batería combina tambores y platillos. Marca ritmo, energía y estructura en una canción.
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-sm-6 col-lg-4">
-          <div class="product-card">
+          <div class="card product-card text-light">
             <div class="product-img">
               <img src="CSS/Asset/percusion/xilofono.webp" alt="Xilófono">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Xilófono</h5>
-              <p class="card-text">Percusión melódica de concierto</p>
-              <p class="price">$11,400 MXN</p>
-              <button class="btn btn-gold btn-sm">Comprar</button>
+            <div class="card-body text-center">
+              <h5 class="card-title fs-3 fw-bold">Xilófono</h5>
+              <p class="card-text">Percusión melódica de sonido brillante.</p>
+              <button class="btn btn-dorado" data-bs-toggle="collapse" data-bs-target="#infoXilofono">Saber más</button>
+              <div class="collapse mt-3" id="infoXilofono">
+                <div class="card card-body bg-dark bg-opacity-50 border-warning text-light">
+                  Está formado por láminas afinadas que se golpean con baquetas. Produce notas claras y definidas.
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Viento -->
-  <section class="section-block">
-    <div class="container">
-      <h2 class="section-title">Instrumentos de Viento</h2>
+    <!-- VIENTO -->
+    <section class="container py-5">
+      <h2 class="text-center titulo-seccion mb-4">Instrumentos de Viento</h2>
 
       <div class="row g-4">
 
         <div class="col-sm-6 col-lg-4">
-          <div class="product-card">
+          <div class="card product-card text-light">
             <div class="product-img">
               <img src="CSS/Asset/viento/clarinete.png" alt="Clarinete">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Clarinete</h5>
-              <p class="card-text">Clarinete elegante de estudio</p>
-              <p class="price">$5,600 MXN</p>
-              <button class="btn btn-gold btn-sm">Comprar</button>
+            <div class="card-body text-center">
+              <h5 class="card-title fs-3 fw-bold">Clarinete</h5>
+              <p class="card-text">Instrumento de viento madera expresivo.</p>
+              <button class="btn btn-dorado" data-bs-toggle="collapse" data-bs-target="#infoClarinete">Saber más</button>
+              <div class="collapse mt-3" id="infoClarinete">
+                <div class="card card-body bg-dark bg-opacity-50 border-warning text-light">
+                  Usa una caña simple para producir sonido. Destaca por su rango amplio y su tono suave o brillante.
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-sm-6 col-lg-4">
-          <div class="product-card">
+          <div class="card product-card text-light">
             <div class="product-img">
               <img src="CSS/Asset/viento/corno fances.png" alt="Corno francés">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Corno Francés</h5>
-              <p class="card-text">Acabado dorado orquestal</p>
-              <p class="price">$19,700 MXN</p>
-              <button class="btn btn-gold btn-sm">Comprar</button>
+            <div class="card-body text-center">
+              <h5 class="card-title fs-3 fw-bold">Corno Francés</h5>
+              <p class="card-text">Instrumento metálico de sonido noble.</p>
+              <button class="btn btn-dorado" data-bs-toggle="collapse" data-bs-target="#infoCorno">Saber más</button>
+              <div class="collapse mt-3" id="infoCorno">
+                <div class="card card-body bg-dark bg-opacity-50 border-warning text-light">
+                  El corno francés tiene un sonido cálido y redondo. Es muy usado en orquestas y música sinfónica.
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-sm-6 col-lg-4">
-          <div class="product-card">
+          <div class="card product-card text-light">
             <div class="product-img">
               <img src="CSS/Asset/viento/fagot.webp" alt="Fagot">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Fagot</h5>
-              <p class="card-text">Instrumento de viento madera</p>
-              <p class="price">$27,500 MXN</p>
-              <button class="btn btn-gold btn-sm">Comprar</button>
+            <div class="card-body text-center">
+              <h5 class="card-title fs-3 fw-bold">Fagot</h5>
+              <p class="card-text">Viento madera de registro grave.</p>
+              <button class="btn btn-dorado" data-bs-toggle="collapse" data-bs-target="#infoFagot">Saber más</button>
+              <div class="collapse mt-3" id="infoFagot">
+                <div class="card card-body bg-dark bg-opacity-50 border-warning text-light">
+                  El fagot tiene un sonido profundo y particular. Se usa en orquesta para líneas graves y efectos expresivos.
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-sm-6 col-lg-4">
-          <div class="product-card">
+          <div class="card product-card text-light">
             <div class="product-img">
               <img src="CSS/Asset/viento/flauta.png" alt="Flauta">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Flauta</h5>
-              <p class="card-text">Flauta transversal plateada</p>
-              <p class="price">$4,800 MXN</p>
-              <button class="btn btn-gold btn-sm">Comprar</button>
+            <div class="card-body text-center">
+              <h5 class="card-title fs-3 fw-bold">Flauta</h5>
+              <p class="card-text">Instrumento ligero de sonido claro.</p>
+              <button class="btn btn-dorado" data-bs-toggle="collapse" data-bs-target="#infoFlauta">Saber más</button>
+              <div class="collapse mt-3" id="infoFlauta">
+                <div class="card card-body bg-dark bg-opacity-50 border-warning text-light">
+                  La flauta produce sonido por el aire que vibra al pasar por su embocadura. Su tono es claro y brillante.
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-sm-6 col-lg-4">
-          <div class="product-card">
+          <div class="card product-card text-light">
             <div class="product-img">
               <img src="CSS/Asset/viento/oboe.png" alt="Oboe">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Oboe</h5>
-              <p class="card-text">Sonido cálido y refinado</p>
-              <p class="price">$13,900 MXN</p>
-              <button class="btn btn-gold btn-sm">Comprar</button>
+            <div class="card-body text-center">
+              <h5 class="card-title fs-3 fw-bold">Oboe</h5>
+              <p class="card-text">Viento madera de sonido penetrante.</p>
+              <button class="btn btn-dorado" data-bs-toggle="collapse" data-bs-target="#infoOboe">Saber más</button>
+              <div class="collapse mt-3" id="infoOboe">
+                <div class="card card-body bg-dark bg-opacity-50 border-warning text-light">
+                  El oboe usa doble caña y tiene un sonido claro, intenso y expresivo. Suele afinar a la orquesta.
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-sm-6 col-lg-4">
-          <div class="product-card">
+          <div class="card product-card text-light">
             <div class="product-img">
               <img src="CSS/Asset/viento/saxofon.png" alt="Saxofón">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Saxofón</h5>
-              <p class="card-text">Saxofón alto dorado</p>
-              <p class="price">$12,300 MXN</p>
-              <button class="btn btn-gold btn-sm">Comprar</button>
+            <div class="card-body text-center">
+              <h5 class="card-title fs-3 fw-bold">Saxofón</h5>
+              <p class="card-text">Instrumento versátil y potente.</p>
+              <button class="btn btn-dorado" data-bs-toggle="collapse" data-bs-target="#infoSaxofon">Saber más</button>
+              <div class="collapse mt-3" id="infoSaxofon">
+                <div class="card card-body bg-dark bg-opacity-50 border-warning text-light">
+                  Aunque suele ser metálico, pertenece a viento madera. Es muy usado en jazz, pop, bandas y música clásica.
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-sm-6 col-lg-4">
-          <div class="product-card">
+          <div class="card product-card text-light">
             <div class="product-img">
               <img src="CSS/Asset/viento/trombon.webp" alt="Trombón">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Trombón</h5>
-              <p class="card-text">Trombón de vara profesional</p>
-              <p class="price">$10,600 MXN</p>
-              <button class="btn btn-gold btn-sm">Comprar</button>
+            <div class="card-body text-center">
+              <h5 class="card-title fs-3 fw-bold">Trombón</h5>
+              <p class="card-text">Metal de sonido fuerte y profundo.</p>
+              <button class="btn btn-dorado" data-bs-toggle="collapse" data-bs-target="#infoTrombon">Saber más</button>
+              <div class="collapse mt-3" id="infoTrombon">
+                <div class="card card-body bg-dark bg-opacity-50 border-warning text-light">
+                  El trombón utiliza una vara deslizante para cambiar la altura de las notas. Es común en orquesta, jazz y bandas.
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-sm-6 col-lg-4">
-          <div class="product-card">
+          <div class="card product-card text-light">
             <div class="product-img">
               <img src="CSS/Asset/viento/trompeta.png" alt="Trompeta">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Trompeta</h5>
-              <p class="card-text">Brillante y potente</p>
-              <p class="price">$7,900 MXN</p>
-              <button class="btn btn-gold btn-sm">Comprar</button>
+            <div class="card-body text-center">
+              <h5 class="card-title fs-3 fw-bold">Trompeta</h5>
+              <p class="card-text">Metal brillante de gran potencia.</p>
+              <button class="btn btn-dorado" data-bs-toggle="collapse" data-bs-target="#infoTrompeta">Saber más</button>
+              <div class="collapse mt-3" id="infoTrompeta">
+                <div class="card card-body bg-dark bg-opacity-50 border-warning text-light">
+                  La trompeta destaca por su sonido claro y brillante. Se usa en música clásica, jazz, mariachi y bandas.
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-sm-6 col-lg-4">
-          <div class="product-card">
+          <div class="card product-card text-light">
             <div class="product-img">
               <img src="CSS/Asset/viento/tuba.webp" alt="Tuba">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Tuba</h5>
-              <p class="card-text">Sonido grave para ensamble</p>
-              <p class="price">$22,800 MXN</p>
-              <button class="btn btn-gold btn-sm">Comprar</button>
+            <div class="card-body text-center">
+              <h5 class="card-title fs-3 fw-bold">Tuba</h5>
+              <p class="card-text">Instrumento grave de la familia de metal.</p>
+              <button class="btn btn-dorado" data-bs-toggle="collapse" data-bs-target="#infoTuba">Saber más</button>
+              <div class="collapse mt-3" id="infoTuba">
+                <div class="card card-body bg-dark bg-opacity-50 border-warning text-light">
+                  La tuba es uno de los instrumentos más graves de viento metal. Da base sonora a orquestas y bandas.
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
+  </main>
+
+  <footer class="text-center py-4">
     <p class="mb-0">INSTRUMENTO © 2026 | Catálogo de instrumentos musicales</p>
   </footer>
 
   <script src="Bootstrap/js/bootstrap.min.js"></script>
-
 </body>
 </html>
