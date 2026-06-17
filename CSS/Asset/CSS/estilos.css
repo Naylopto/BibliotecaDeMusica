@@ -1,0 +1,173 @@
+:root {
+      --negro: #08080c;
+      --vino: #7b1115;
+      --vino-oscuro: #3b0507;
+      --dorado: #c79a58;
+      --dorado-claro: #e8c98a;
+      --crema: #f3dec2;
+    }
+body {
+  position: relative;
+  min-height: 100vh;
+  color: var(--crema);
+  background-color: #0b0d12;
+  background-image:
+    radial-gradient(circle at 20% 15%, rgba(95, 100, 110, 0.22), transparent 28%),
+    radial-gradient(circle at 80% 8%, rgba(70, 75, 88, 0.18), transparent 25%),
+    radial-gradient(circle at 50% 45%, rgba(255, 255, 255, 0.045), transparent 35%),
+    linear-gradient(135deg, #15171d 0%, #0b0d12 45%, #050609 100%);
+  font-family: var(--bs-body-font-family);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      rgba(255,255,255,0.035) 0px,
+      rgba(255,255,255,0.035) 1px,
+      transparent 1px,
+      transparent 5px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(255,255,255,0.02) 0px,
+      rgba(255,255,255,0.02) 1px,
+      transparent 1px,
+      transparent 7px
+    );
+  opacity: 0.22;
+  z-index: -1;
+}
+
+    .navbar {
+      background: rgba(8, 8, 12, 0.96);
+      border-bottom: 1px solid rgba(199, 154, 88, 0.6);
+      padding: 18px 0;
+    }
+
+    .navbar-brand {
+      color: var(--dorado-claro) !important;
+      font-family: "Cinzel", serif;
+      font-size: 2rem;
+      letter-spacing: 3px;
+    }
+
+    .hero {
+      min-height: 420px;
+      background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.75)),
+        url("img/hero-instrumentos.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      border-bottom: 1px solid rgba(199, 154, 88, 0.5);
+    }
+
+    .hero h1 {
+      font-family: "Cinzel", serif;
+      color: var(--dorado-claro);
+      font-size: clamp(2.2rem, 5vw, 4.5rem);
+      text-shadow: 0 0 20px rgba(199, 154, 88, .45);
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      color: #f6e5c9;
+    }
+
+    .section-block {
+      padding: 70px 0;
+      border-bottom: 1px solid rgba(199, 154, 88, 0.25);
+    }
+
+    .section-title {
+      color: var(--dorado-claro);
+      text-align: center;
+      margin-bottom: 35px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .product-card {
+      background:
+        radial-gradient(circle at top, #9c1b20, var(--vino-oscuro) 72%);
+      border: 2px solid var(--dorado);
+      border-radius: 10px;
+      overflow: hidden;
+      height: 100%;
+      box-shadow: 0 0 18px rgba(0,0,0,.65);
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 28px rgba(199, 154, 88, .35);
+    }
+
+    .product-img {
+      height: 245px;
+      background: rgba(0,0,0,.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 18px;
+      border-bottom: 1px solid rgba(199, 154, 88, 0.35);
+    }
+
+    .product-img img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 12px 18px rgba(0,0,0,.65));
+    }
+    
+    .card-body {
+      text-align: center;
+      padding: 22px;
+    }
+
+    .card-title {
+      color: var(--crema);
+      font-size: 1.55rem;
+      margin-bottom: 8px;
+    }
+
+    .card-text {
+      color: #e5c79d;
+      margin-bottom: 8px;
+    }
+
+    .price {
+      color: var(--dorado-claro);
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .btn-gold {
+      background: linear-gradient(135deg, var(--dorado-claro), var(--dorado));
+      color: #2b1208;
+      border: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-radius: 6px;
+      padding: 9px 20px;
+    }
+
+    .btn-gold:hover {
+      background: linear-gradient(135deg, #f2d99c, #b98642);
+      color: #1c0b04;
+    }
+
+    footer {
+      background: linear-gradient(90deg, #350507, #7b1115);
+      color: var(--dorado-claro);
+      border-top: 1px solid rgba(199, 154, 88, 0.5);
+      text-align: center;
+      padding: 25px 0;
+    }
