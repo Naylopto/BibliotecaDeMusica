@@ -1,11 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina de inicio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/Asset/CSS/estilos.css">
+  <title>Instrumentarium</title>
 </head>
 <body>
-    
+
+  <div id="navbar"></div>
+
+  <header class="hero">
+    <div class="container text-center">
+      <h1>INSTRUMENTARIUM</h1>
+      <p>Descubre el fascinante mundo de los instrumentos musicales</p>
+      <a href="categorias.html" class="btn btn-gold">Explorar instrumentos</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-block">
+      <div class="container">
+        <h2 class="section-title">Instrumento del mes</h2>
+
+        <div class="instrumento-mes">
+          <img src="CSS/Asset/Cuerdas/violin.png" alt="Violín">
+
+          <div>
+            <h3>Violín</h3>
+            <p>Instrumento de cuerda frotada con una voz cálida y expresiva.</p>
+            <a href="instrumento.html" class="btn btn-gold btn-sm">Descubrir más</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block">
+  <div class="container">
+    <h2 class="section-title">Instrumentos Destacados</h2>
+
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="product-img">
+            <img src="CSS/Asset/Cuerdas/Guitarra acustica.png" alt="Guitarra">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Guitarra</h5>
+            <p class="card-text">Cuerda</p>
+            <button class="btn btn-gold btn-sm">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="product-img">
+            <img src="CSS/Asset/Cuerdas/piano.webp" alt="Piano">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Piano</h5>
+            <p class="card-text">Cuerda</p>
+            <button class="btn btn-gold btn-sm">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="product-img">
+            <img src="CSS/Asset/viento/saxofon.png" alt="Saxofón">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Saxofón</h5>
+            <p class="card-text">Viento</p>
+            <button class="btn btn-gold btn-sm">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="product-img">
+            <img src="CSS/Asset/Cuerdas/arpa.png" alt="Arpa">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Arpa</h5>
+            <p class="card-text">Cuerda</p>
+            <button class="btn btn-gold btn-sm">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <section class="section-block text-center">
+      <div class="container">
+        <a href="categorias.html" class="btn btn-gold btn-sm">Explorar por categorias</a>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="componentes.js"></script>
+  <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
