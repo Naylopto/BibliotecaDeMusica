@@ -31,18 +31,19 @@ body {
   border: 2px solid var(--dorado) !important;
 }
 
-    .hero {
-      min-height: 420px;
-      background:
-        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.75)),
-        url("../fondoHeader.png");
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      border-bottom: 1px solid rgba(199, 154, 88, 0.5);
-    }
+.hero {
+min-height: 420px;
+background:
+linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.75)),
+url("../fondoHeader.png");
+background-size: cover;
+background-position: center;
+display: flex;
+align-items: center;
+text-align: center;
+border-bottom: 1px solid rgba(199, 154, 88, 0.5);
+}
+
 .btn-dorado {
   background: linear-gradient(135deg, var(--dorado-claro), var(--dorado));
   color: #241006;
@@ -138,15 +139,7 @@ body {
 
 .form-control::placeholder {
   color: rgba(243, 222, 194, .65);
-}
-
-    footer {
-      background: linear-gradient(90deg, #350507, #7b1115);
-      color: var(--dorado-claro);
-      border-top: 1px solid rgba(199, 154, 88, 0.5);
-      text-align: center;
-      padding: 25px 0;
-    }
+}  
   
 .instrumento-mes {
   max-width: 760px;

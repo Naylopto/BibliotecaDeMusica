@@ -3,13 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="CSS/Asset/CSS/estilos.css">
+<link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
 
 <title>region</title>
-
-<script src="Bootstrap/js/bootstrap.bundle.min.js"></script>  
+ 
 
 <style>
-   
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        flex: 1;
+    }
 
     .section-container{
         max-width: 1000px;
@@ -92,7 +101,7 @@
         <!-- América Latina -->
         <div class="col-md-3 col-6">
             <div class="region-card">
-                <img src="CSS/Activo/viento/zampoña.jpg"
+                <img src="CSS/Asset/viento/zampoña.jpg"
                      alt="Zampoña">
                 <div class="region-name">América Latina</div>
             </div>
@@ -101,8 +110,7 @@
         <!-- Europa -->
         <div class="col-md-3 col-6">
             <div class="region-card">
-                <img src="CSS/Activo/Cuerdas/violin.png"
-                     alt="Violín">
+                <img src="CSS/Asset/Cuerdas/violin.png"   alt="Violín">
                 <div class="region-name">Europa</div>
             </div>
         </div>
@@ -110,7 +118,7 @@
         <!-- Asia -->
         <div class="col-md-3 col-6">
             <div class="region-card">
-                <img src="CSS/Activo/Cuerdas/shamisen.jpg"
+                <img src="CSS/Asset/Cuerdas/shamisen.jpg"
                      alt="Instrumento asiático">
                 <div class="region-name">Asia</div>
             </div>
@@ -119,18 +127,12 @@
         <!-- África -->
         <div class="col-md-3 col-6">
             <div class="region-card">
-                <img src="CSS/Activo/Percusión/tambor.webp"
+                <img src="CSS/Asset/percusion/set-de-tambours-doundouns-8b5f4.png"
                      alt="Tambor africano">
                 <div class="region-name">África</div>
             </div>
         </div>
 
-    </div>
-
-    <div class="text-center mt-5">
-        <button class="btn btn-custom">
-            Ver más regiones
-        </button>
     </div>
 
 </div>
