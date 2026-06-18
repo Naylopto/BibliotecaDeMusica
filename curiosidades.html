@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>curiosidades</title>
+
+<script src="Bootstrap/js/bootstrap.bundle.min.js"></script>  
+
+<style>
+    
+
+    .section-title{
+        text-align:center;
+        font-weight:bold;
+        font-size:1.5rem;
+        margin:40px 0;
+        letter-spacing:1px;
+    }
+
+    .music-card{
+        background:#5e2129;
+        border:1px solid rgba(255,255,255,.1);
+        border-radius:10px;
+        padding:15px;
+        height:100%;
+        transition:.3s;
+    }
+
+    .music-card:hover{
+        transform:translateY(-3px);
+        box-shadow:0 0 15px rgba(0,0,0,.3);
+    }
+
+    .music-img{
+        width:70px;
+        height:70px;
+        object-fit:contain;
+    }
+
+    .question{
+        color:#b9c7e6;
+        font-weight:bold;
+        margin-bottom:8px;
+        font-size:14px;
+    }
+
+    .fact{
+        color:white;
+        font-size:14px;
+        line-height:1.4;
+    }
+</style>
+</head>
+<body>
+
+<div class="container py-4">
+
+    <h2 class="section-title">
+        CURIOSIDADES MUSICALES
+    </h2>
+
+    <div class="row g-3">
+
+        <!-- Tarjeta 1 -->
+        <div class="col-md-4">
+            <div class="music-card d-flex align-items-center gap-3">
+
+                <img src="CSS/Activo/Cuerdas/piano.webp" class="music-img" alt="Piano">
+
+                <div>
+                    <div class="question">
+                        <span class="highlight">Sabias</span> que...
+                    </div>
+
+                    <div class="fact">el piano tiene<br><strong>88 teclas</strong>?</div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="col-md-4">
+            <div class="music-card d-flex align-items-center gap-3">
+
+                <img src="CSS/Activo/viento/organo.jpg" class="music-img" alt="organo">
+
+                <div>
+                    <div class="question">
+                        <span class="highlight">Sabias</span> que...
+                    </div>
+
+                    <div class="fact">el organo puede tener<br> mas de <strong>10,000 tubos</strong>?
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="col-md-4">
+            <div class="music-card d-flex align-items-center gap-3">
+
+                <img src="CSS/Activo/Cuerdas/theremin.jpg" class="music-img" alt="Triangulo">
+
+                <div>
+                    <div class="question">
+                        <span class="highlight">Sabias</span> que...
+                    </div>
+
+                    <div class="fact"> el theremin se<br>toca sin tocarlo?</div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

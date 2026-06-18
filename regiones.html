@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>region</title>
+
+<script src="Bootstrap/js/bootstrap.bundle.min.js"></script>  
+
+<style>
+   
+
+    .section-container{
+        max-width: 1000px;
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .title{
+        text-align:center;
+        color: black;
+        font-weight:bold;
+        text-transform:uppercase;
+        margin-bottom:5px;
+        letter-spacing:1px;
+    }
+
+    .subtitle{
+        text-align:center;
+        color:black;
+        font-size:.9rem;
+        margin-bottom:30px;
+    }
+
+    .region-card{
+        background:#5e2129;
+        border:1px solid rgba(84,142,255,.25);
+        border-radius:8px;
+        overflow:hidden;
+        transition:.3s;
+        height:100%;
+    }
+
+    .region-card:hover{
+        transform:translateY(-4px);
+        box-shadow:0 0 15px rgba(0,0,0,.4);
+    }
+
+    .region-card img{
+        width:100%;
+        height:160px;
+        object-fit:cover;
+    }
+
+    .region-name{
+        text-align:center;
+        color:white;
+        font-weight:600;
+        padding:12px;
+        font-size:.95rem;
+    }
+
+    .btn-custom{
+        background:#5e2129;
+        border:none;
+        color:white;
+        padding:10px 30px;
+        font-weight:bold;
+        text-transform:uppercase;
+        font-size:.8rem;
+        border-radius:4px;
+    }
+
+    .btn-custom:hover{
+        background:#1ab0b2;
+        color:white;
+    }
+</style>
+</head>
+<body>
+
+<div class="container section-container">
+
+    <h2 class="title">Instrumentos por Región</h2>
+    <p class="subtitle">La música de cada cultura</p>
+
+    <div class="row g-4">
+
+        <!-- América Latina -->
+        <div class="col-md-3 col-6">
+            <div class="region-card">
+                <img src="CSS/Activo/viento/zampoña.jpg"
+                     alt="Zampoña">
+                <div class="region-name">América Latina</div>
+            </div>
+        </div>
+
+        <!-- Europa -->
+        <div class="col-md-3 col-6">
+            <div class="region-card">
+                <img src="CSS/Activo/Cuerdas/violin.png"
+                     alt="Violín">
+                <div class="region-name">Europa</div>
+            </div>
+        </div>
+
+        <!-- Asia -->
+        <div class="col-md-3 col-6">
+            <div class="region-card">
+                <img src="CSS/Activo/Cuerdas/shamisen.jpg"
+                     alt="Instrumento asiático">
+                <div class="region-name">Asia</div>
+            </div>
+        </div>
+
+        <!-- África -->
+        <div class="col-md-3 col-6">
+            <div class="region-card">
+                <img src="CSS/Activo/Percusión/tambor.webp"
+                     alt="Tambor africano">
+                <div class="region-name">África</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="text-center mt-5">
+        <button class="btn btn-custom">
+            Ver más regiones
+        </button>
+    </div>
+
+</div>
+
+</body>
+</html>
