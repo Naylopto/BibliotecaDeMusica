@@ -1,0 +1,167 @@
+<!-- InicioSesion.html -->
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iniciar sesión | Instrumentarium</title>
+  <link rel="stylesheet" href="CSS/Asset/CSS/sesion.css">
+  <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/Asset/CSS/estilos.css">
+  <link rel="stylesheet" href="CSS/Asset/CSS/sesion.css">
+</head>
+
+<body>
+        
+  <header class="topbar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2">
+        <div class="container-fluid px-3 px-lg-4">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="inicio.html">
+            <img src="CSS/Asset/LogoARPA.png" alt="" width="40" height="40">
+            <span> INSTRUMENTARIUM </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarPrincipal" aria-controls="navbarPrincipal"
+            aria-expanded="false" aria-label="Abrir o cerrar el menú">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarPrincipal">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                    <li class="nav-item"><a class="nav-link" href="inicio.html">Inicio</a></li>
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <a class="btn btn-warning btn-sm d-inline-flex align-items-center gap-2 px-3"
+                            href="InicioSesion.html" aria-label="Iniciar sesión">
+                            <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="8" r="4"></circle>
+                            <path d="M4 21a8 8 0 0 1 16 0"></path>
+                            </svg>
+                            <span>Iniciar sesión</span>
+                        </a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="categorias.html">Categorías</a></li>
+                    <li class="nav-item"><a class="nav-link" href="instrumento.html">Instrumentos</a></li>
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <a class="btn btn-outline-warning btn-sm d-inline-flex align-items-center gap-2 px-3"
+                            href="carrito.html" aria-label="Abrir carrito de compras">
+                            <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 3h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 2-1.6L22 7H6"></path>
+                            <circle cx="10" cy="20" r="1"></circle>
+                            <circle cx="18" cy="20" r="1"></circle>
+                            </svg>
+                            <span>Carrito</span>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Más</a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="curiosidades.html">Curiosidades</a></li>
+                        <li><a class="dropdown-item" href="regiones.html">Regiones</a></li>
+                        <li><a class="dropdown-item" href="acerca.html">Sobre nosotros</a></li>
+                        <li><a class="dropdown-item" href="Historia.html">Historia</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <section class="welcome">
+      <p class="eyebrow">UN ESPACIO PARA LA MÚSICA</p>
+      <h1>Encuentra tu<br><em>próxima inspiración.</em></h1>
+      <p>Explora instrumentos, descubre sus historias y vuelve a lo que más te apasiona.</p>
+      <div class="music-notes" aria-hidden="true">♪　♫　♬</div>
+    </section>
+
+    <section class="login-card">
+      <p class="eyebrow">ACCESO A TU CUENTA</p>
+      <h2>Qué gusto verte</h2>
+      <p class="muted">Ingresa tus datos para continuar.</p>
+
+      <div class="account-switch" role="group" aria-label="Tipo de acceso">
+        <button class="switch-option active" type="button" data-type="usuario" aria-pressed="true">Usuario</button>
+        <button class="switch-option" type="button" data-type="admin" aria-pressed="false">Administrador</button>
+      </div>
+      <p class="hint" id="hint">Accede a tu cuenta de Instrumentarium.</p>
+
+      <form id="login-form">
+        <label for="correo">Correo electrónico</label>
+        <input id="correo" name="correo" type="email" autocomplete="username"
+               placeholder="tu@correo.com" required>
+
+        <label for="password">Contraseña</label>
+        <input id="password" name="password" type="password"
+               autocomplete="current-password" placeholder="Escribe tu contraseña" required>
+
+        <button class="submit-button" type="submit">Iniciar sesión <span>→</span></button>
+        <p id="message" class="message" role="status" aria-live="polite"></p>
+      </form>
+
+      <p class="footnote" id="footnote">¿Aún no tienes cuenta? Contacta al equipo de Instrumentarium.</p>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Instrumentarium · Hecho para quienes aman la música</footer>
+
+  <script>
+    const form = document.querySelector("#login-form");
+    const message = document.querySelector("#message");
+    const hint = document.querySelector("#hint");
+    const footnote = document.querySelector("#footnote");
+    const submit = form.querySelector("button[type='submit']");
+    let accountType = "usuario";
+
+    document.querySelector("#year").textContent = new Date().getFullYear();
+
+    document.querySelectorAll(".switch-option").forEach((button) => {
+      button.addEventListener("click", () => {
+        accountType = button.dataset.type;
+
+        document.querySelectorAll(".switch-option").forEach((option) => {
+          const selected = option === button;
+          option.classList.toggle("active", selected);
+          option.setAttribute("aria-pressed", String(selected));
+        });
+
+        const isAdmin = accountType === "admin";
+        hint.textContent = isAdmin
+          ? "Acceso exclusivo para administración."
+          : "Accede a tu cuenta de Instrumentarium.";
+        submit.innerHTML = isAdmin
+          ? "Entrar como administrador <span>→</span>"
+          : "Iniciar sesión <span>→</span>";
+        footnote.hidden = isAdmin;
+        message.textContent = "";
+      });
+    });
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      if (!form.reportValidity()) return;
+
+      const correo = form.elements.correo.value.trim();
+      const password = form.elements.password.value;
+
+      // Demostración visual: todavía no consulta una base de datos.
+      if (!correo || !password) return;
+
+      message.className = "message success";
+      message.textContent = `Formulario listo para acceso de ${accountType}. Conecta aquí tu sistema de autenticación.`;
+    });
+  </script>
+
+  <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
